@@ -62,12 +62,6 @@ jobs:
         key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
         restore-keys: |
           ${{ runner.os }}-maven-        
-    - name: mvn verify
-      run: mvn -B verify --file pom.xml
-      working-directory: ${{ env.BASE_DIR }}/elementconnect
-    - name: compile jar
-      run: mvn install -U -DskipTests -Djacoco.skip
-      working-directory: ${{ env.BASE_DIR }}/elementconnect
     - uses: azure/docker-login@v1
       with:
         username: ${{ secrets.DOCKER_HUB_USERNAME }}
