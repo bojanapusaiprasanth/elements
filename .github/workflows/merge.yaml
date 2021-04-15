@@ -80,7 +80,7 @@ jobs:
       working-directory: ${{ env.BASE_DIR }}/elementconnect
     - name: Rename the webapp folder to elementconnect
       run: |
-        mv ${{ env.BASE_DIR }}/elementconnect/target-grunt/webapp ${{ env.BASE_DIR }}/elementconnect/target-grunt/webapp/elementconnect
+        mv ${{ env.BASE_DIR }}/elementconnect/target-grunt/webapp ${{ env.BASE_DIR }}/elementconnect/target-grunt/elementconnect
         cd ${{ env.BASE_DIR }}/elementconnect/target-grunt && ls -lrth
         yes | cp -r ${{ env.BASE_DIR }}/elementconnect/target-grunt/elementconnect ${{ env.BASE_DIR }}/elementconnect/deploy/nginx/
     - name: upload build folder
