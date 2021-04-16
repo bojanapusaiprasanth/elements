@@ -1,3 +1,11 @@
+## elementconnect [1.1.0](https://github.com/bojanapusaiprasanth/elements/compare/elementconnect@1.0.0...elementconnect@1.1.0) (2021-04-16)
+
+
+### Features
+
+* few feature changes to upload assets ([1860379](https://github.com/bojanapusaiprasanth/elements/commit/1860379747db9512f3a0393fe60c25b9d53f67a6))
+* few features to upload assets are done ([cc55333](https://github.com/bojanapusaiprasanth/elements/commit/cc5533375454513e58d37d2c8260c9509e04b739))
+
 ## elementconnect 1.0.0 (2021-04-16)
 
 
