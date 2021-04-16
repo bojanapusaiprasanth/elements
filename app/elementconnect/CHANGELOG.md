@@ -1,3 +1,10 @@
+## elementconnect [1.2.0](https://github.com/bojanapusaiprasanth/elements/compare/elementconnect@1.1.0...elementconnect@1.2.0) (2021-04-16)
+
+
+### Features
+
+* BREAKING CHANGE: few breaking changes are happened ([421771a](https://github.com/bojanapusaiprasanth/elements/commit/421771a8516831f00a87f4c1355db76570ed645d))
+
 ## elementconnect [1.1.0](https://github.com/bojanapusaiprasanth/elements/compare/elementconnect@1.0.0...elementconnect@1.1.0) (2021-04-16)
 
 
