@@ -12,7 +12,7 @@ sysname := $(shell uname -s | awk '{print tolower($$0)}')
 release.artifact:
 	@printf "\033[36m## $(myname): release.artifact\033[0m\n"
 	@which docker 1>/dev/null || { printf "docker binary not found\n" && exit 1 ;}
-	docker build --no-cache -f "$(mydir)/deploy/Dockerfile" -t "$(image)" "$(mydir)"
+	docker build --no-cache -f "$(mydir)/deploy/Dockerfile" -t "$(image)" "$(mydir)"/deploy
 
 	docker tag "$(image)" "$(image):$(tag)"
 	docker tag "$(image)" "$(image):latest"
