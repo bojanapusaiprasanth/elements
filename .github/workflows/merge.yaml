@@ -98,7 +98,7 @@ jobs:
           ${{ runner.os }}-node-
     - name: Zip assets
       run: |
-        zip -r elementconnect.zip ${{ env.BASE_DIR }}/elementconnect/target-grunt/elementconnect
+        zip -r ${{ env.BASE_DIR }}/elementconnect/elementconnect.zip ${{ env.BASE_DIR }}/elementconnect/target-grunt/elementconnect
     - name: Install dependencies
       run: npm cache clean --force && npm install
     - name: release all the things

@@ -40,9 +40,9 @@ plugins:
     - prepareCmd: "make release.artifact && make release.publish"
   - - "@semantic-release/github"
     - successComment: false
-    - assets:
-        - path: "**/elementconnect.zip"
-          label: "elementconnect.zip"
+      assets:
+        path: "elementconnect.zip"
+        label: "elementconnect.zip"
   - - "@semantic-release/git"
     - assets:
         - "package.json"
