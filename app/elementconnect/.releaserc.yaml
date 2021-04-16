@@ -33,11 +33,7 @@ plugins:
     - npmPublish: false
       tarballDir: "target-grunt/elementconnect"
   - - "@semantic-release/exec"
-  - prepareCmd: "make release.artifact"
-  - - "@semantic-release/exec"
-  - prepareCmd: "make release.security"
-  - - "@semantic-release/exec"
-  - prepareCmd: "make release.publish"
+  - prepareCmd: "make release.artifact && make release.publish"
   - - "@semantic-release/github"
     - assets: "elementconnect.zip"
     - successComment: false
