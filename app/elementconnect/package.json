@@ -1,5 +1,5 @@
 {
-  "name": "Elementconnect",
+  "name": "elementconnect",
   "private": true,
   "scripts": {
     "release": "semantic-release"
@@ -24,6 +24,6 @@
     "serverless": "^2.12.0"
   },
   "peerDependencies": {},
-  "version": "0.0.0-semantically-released",
+  "version": "0.0.0",
   "optionalDependencies": {}
 }

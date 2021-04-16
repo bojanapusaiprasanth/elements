@@ -1,5 +1,5 @@
 {
-  "name": "element-connect",
+  "name": "elementconnect-root",
   "private": true,
   "devDependencies": {
     "conventional-changelog-conventionalcommits": "^4.2.3",
