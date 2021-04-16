@@ -2,6 +2,7 @@ branches:
   - "main"
   - { name: "alpha", prerelease: true }
   - "master"
+  - "develop"
 plugins:
   - - "@semantic-release/commit-analyzer"
     - preset: "angular"
@@ -9,9 +10,12 @@ plugins:
         - { type: "build", release: "patch" }
         - { type: "ci", release: "patch" }
         - { type: "docs", release: false }
+        - { type: "perf", release: "major" }
         - { type: "refactor", release: "patch" }
         - { type: "style", release: false }
         - { type: "test", release: "patch" }
+        - { type: "fix", release: "patch" }
+        - { type: "feat", release: "minor" }
   - - "@semantic-release/changelog"
     - changelogFile: "CHANGELOG.md"
   - - "@semantic-release/release-notes-generator"
@@ -31,14 +35,11 @@ plugins:
           - { type: "test", hidden: false, section: "Tests" }
   - - "@semantic-release/npm"
     - npmPublish: false
-      tarballDir: "elementconnect"
+      tarballDir: "dist"
   - - "@semantic-release/exec"
     - prepareCmd: "make release.artifact && make release.publish"
   - - "@semantic-release/github"
     - successComment: false
-    - assets: 
-        - path: "*"
-          label: "elementconnect.zip"
   - - "@semantic-release/git"
     - assets:
         - "package.json"
